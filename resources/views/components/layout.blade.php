@@ -27,6 +27,7 @@
         
       <div>
         <a href="/2" style="color: #ffd230" class="ml-3 mr-3"> STUDENT REGISTRATION </a>
+        
       </div>
       <div>
         <a href="/1" style="color: #ffd230" class="ml-3 mr-3"> DASHBOARD </a>

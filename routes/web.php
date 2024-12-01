@@ -35,3 +35,4 @@ Route::post('/logout', [UserController:: class,'logout']);
 
 
 Route::post('/stud_reg',[StudentController::class,'student_register']);
+Route::get('/edit/{value}',[StudentController::class, 'edit']);

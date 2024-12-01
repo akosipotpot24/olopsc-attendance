@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     //
+    public function edit(Student $value){
+        return view('edit',['value'=> $value]);
+    }
     public function student_register(Request $req){
         $values = $req->validate([
             'fullname' => 'required',
