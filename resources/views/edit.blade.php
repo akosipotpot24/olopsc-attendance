@@ -29,16 +29,16 @@
                     <div class="card shadow-lg rounded-lg">
                         
                         <div class="card-header text-white d-flex justify-content-between align-items-center" style="background-color:#0a095f;">
-                            <h3 class="mb-0"><b>Student Registration</b></h3>
+                            <h3 class="mb-0"><b>Student </b></h3>
                             <a href="/1" class="btn btn-danger">BACK</a>
                         </div>
-                        
-        
+                    
                         <!-- Form Body -->
                         <div class="card-body">
                             
-                            <form action="/edit1" method="POST">
+                            <form action="/edit1/{{$value->id}}" method="POST">
                                 @csrf
+                                @method('PUT')
                                 <div class="row mb-3">
                                     <!-- Full Name -->
                                     <div class="col-md-6">

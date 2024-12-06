@@ -8,6 +8,17 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     //
+    public function edit1 (Student $value, Request $req){
+        $students = $req->validate([
+           'fullname' => 'required',
+            'stud_number' => 'required',
+            'email' => 'email',
+            'grade_level' => 'required' 
+        ]);
+
+        $value->update($students);
+        return redirect('/1 ');
+    }
     public function edit(Student $value){
         return view('edit',['value'=> $value]);
     }
