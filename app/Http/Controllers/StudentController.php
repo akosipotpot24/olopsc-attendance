@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
     //
+    public function delete(Student $value){
+        $value -> delete();
+        return redirect("/1");
+    }
     public function edit(Student $value){
         return view('edit',['value'=> $value]);
     }
