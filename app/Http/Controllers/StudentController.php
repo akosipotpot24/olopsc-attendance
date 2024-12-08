@@ -12,6 +12,17 @@ class StudentController extends Controller
         $value -> delete();
         return redirect("/1");
     }
+    public function edit1(Student $value, Request $req){
+        $values = $req->validate([
+            'fullname' => 'required',
+            'stud_number' => 'required',
+            'email' => 'email',
+            'grade_level' => 'required'
+        ]);
+
+        $value->update($values);
+        return redirect('/1');
+    }
     public function edit(Student $value){
         return view('edit',['value'=> $value]);
     }

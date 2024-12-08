@@ -37,8 +37,9 @@
                         <!-- Form Body -->
                         <div class="card-body">
                             
-                            <form action="/edit1" method="POST">
+                            <form action="/edit1/{{$value->id}}" method="POST">
                                 @csrf
+                                @method('PUT')
                                 <div class="row mb-3">
                                     <!-- Full Name -->
                                     <div class="col-md-6">
