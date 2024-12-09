@@ -3,7 +3,7 @@
 <div class="container py-md-5">
     <div class="row align-items-center">
       <div class="col-lg-7 py-3 py-md-5">
-        Good Day! {{ auth()->user()->fullname }} 
+        <h3>Good Day! {{ auth()->user()->fullname }} </h3>
       </div>
       
     </div>
@@ -42,7 +42,7 @@
                                 <td>
                                     
                                     <a href="/edit/{{ $value->id }}"><i style="color: green;" class="bx bxs-edit-alt"></i></a>
-                                    <a href="/view/{{ $value->id }}"><i class="bx bx-show"></i></a>
+                                    {{-- <a href="/view/{{ $value->id }}"><i class="bx bx-show"></i></a> --}}
                                     <form action="/delete/{{ $value->id }}" method="POST" style="display: inline-block; margin-right: 5px;">
                                         @csrf
                                         @method('DELETE')
