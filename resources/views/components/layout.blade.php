@@ -49,8 +49,18 @@
               <div class="col-md mr-0 pr-md-0 mb-3 mb-md-0">
                 <input name="password" class="form-control form-control-sm input-dark" type="password" placeholder="Password" />
               </div>
+
+              
+        <div class="col-md mr-0 pr-md-0 mb-3 mb-md-0">
+          <!-- Dropdown for UserType -->
+          <select name="UserType" class="form-control form-control-sm input-dark">
+            <option value="">Choose Here</option>
+              <option value="admin">Admin</option>
+              <option value="hslrc">HSLibrary</option>
+          </select>
+      </div>
               <div class="col-md-auto">
-                <button class="btn btn-success btn-sm">Sign In</button>
+                <button  class="btn btn-success btn-sm">Sign In</button>
               </div>
             </div>
           </form>

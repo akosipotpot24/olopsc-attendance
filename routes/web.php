@@ -27,7 +27,9 @@ Route::get('/1', function () {
 Route::get('/2', function () {
     return view('studreg');
 });
-
+Route::get('/3', function () {
+    return view('library');
+});
 
 Route::post('/register', [UserController:: class,'register']);
 Route::post('/login', [UserController:: class,'login']);
